@@ -61,9 +61,59 @@
     .btn{ padding:10px 16px; border-radius:8px; border:none; cursor:pointer; font-weight:600; }
     .btn-primary{ background:#5b3a30; color:#fff; }
     .success{ background:#e6f6ea; border:1px solid #cdeac8; color:#2a6b36; padding:10px; border-radius:6px; margin-top:12px; }
+    /* Espresso dial-in card */
+    .dial-in{ margin:12px 0 28px; }
+    .dial-in-form{ display:flex; flex-direction:column; gap:14px; }
+    .dial-in h2{ margin:0; color:#3b2f2f; }
+    .dial-in h3{ margin:0 0 6px; font-size:1rem; color:#5b3a30; }
+    .dial-in-intro{ margin:4px 0 0; color:#6d5b50; }
+    .dial-in fieldset{ min-width:0; margin:0; padding:12px; border:1px solid #e6ddd6; border-radius:8px; }
+    .dial-in legend{ padding:0 6px; font-weight:700; color:#5b3a30; }
+    .dial-in-grid{ display:grid; grid-template-columns:repeat(3, minmax(0, 1fr)); gap:10px 12px; align-items:end; }
+    .dial-in-field{ display:flex; flex-direction:column; gap:4px; min-width:0; }
+    .dial-in-wide{ grid-column:1 / -1; }
+    .dial-in input[type="text"],
+    .dial-in input[type="number"],
+    .dial-in input[type="date"],
+    .dial-in textarea{ width:100%; min-height:44px; padding:10px; border:1px solid #d8d8d8; border-radius:6px; background:#fff; color:inherit; font-family:inherit; font-size:16px; }
+    .dial-in input:focus,
+    .dial-in textarea:focus{ outline:2px solid #8DACC0; outline-offset:1px; }
+    .dial-in-optional{ font-weight:400; color:#6d5b50; }
+    .dial-in-hint{ margin:6px 0 0; font-size:0.85rem; color:#6d5b50; }
+    .dial-in-inline{ display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-top:10px; }
+    .dial-in-inline .dial-in-hint{ margin:0; flex:1 1 220px; }
+    .dial-in .btn-secondary{ background:#fff; color:#5b3a30; border:1px solid #5b3a30; }
+    .dial-in .btn-secondary:disabled{ opacity:0.5; cursor:not-allowed; }
+    .dial-in .btn-small{ padding:6px 12px; font-size:0.9rem; }
+    .dial-in-check{ display:flex; gap:8px; align-items:center; min-height:44px; }
+    .dial-in-check input{ width:20px; height:20px; margin:0; }
+    .dial-in details{ padding:10px 12px; border:1px solid #e6ddd6; border-radius:8px; }
+    .dial-in summary{ cursor:pointer; font-weight:700; color:#5b3a30; }
+    .dial-in details[open] summary{ margin-bottom:10px; }
+    .dial-in-helper{ margin-top:12px; padding-top:10px; border-top:1px dashed #e6ddd6; }
+    .dial-in-prediction{ padding:12px; border:1px solid #8DACC0; border-left:6px solid #8DACC0; border-radius:8px; background:#eef4f8; }
+    .dial-in-reco{ display:flex; flex-wrap:wrap; gap:4px 18px; align-items:baseline; margin:0; color:#5b3a30; font-size:1.6rem; font-weight:800; }
+    .dial-in-reco small{ color:#6d5b50; font-size:0.9rem; font-weight:600; }
+    .dial-in-prediction p{ margin:6px 0 0; }
+    .dial-in-contributions{ margin:6px 0 0; padding-left:18px; font-size:0.9rem; }
+    .dial-in-warning{ margin:8px 0 0; color:#7a4b00; font-size:0.85rem; }
+    .dial-in-shots{ display:flex; flex-direction:column; gap:10px; margin:10px 0 0; padding:0; list-style:none; }
+    .dial-in-shot{ padding:10px; border:1px solid #e6ddd6; border-radius:8px; }
+    .dial-in-shot-title{ margin-bottom:6px; font-weight:700; }
+    .dial-in-shot-fields{ display:grid; grid-template-columns:repeat(3, minmax(0, 1fr)); gap:8px; }
+    .dial-in-shot-result{ margin:8px 0 0; font-weight:600; }
+    .dial-in-shot-result:empty{ display:none; }
+    .dial-in-shot-result.is-ok{ color:#2a6b36; }
+    .dial-in-shot-result.is-off{ color:#5b3a30; }
+    .dial-in-error{ color:#a12a1f; font-weight:600; }
+    .dial-in-error ul{ margin:4px 0 0; padding-left:18px; }
+    .dial-in-submit{ display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
+    .dial-in-hp{ position:absolute; left:-10000px; top:auto; width:1px; height:1px; overflow:hidden; }
     @media (max-width:600px){
       .bubble-wave,
       .inventory-list{ grid-template-columns:1fr; }
+      .dial-in-grid{ grid-template-columns:repeat(2, minmax(0, 1fr)); }
+      .dial-in-reco{ font-size:1.35rem; }
     }
   </style>
 </head>
@@ -85,6 +135,175 @@
 
   <div class="container">
     <a href="/">← Back</a>
+
+    <section id="dial-in" class="dial-in" aria-labelledby="dial-in-title">
+      <form id="dial-in-form" class="dial-in-form" novalidate>
+        <div>
+          <h2 id="dial-in-title">Espresso Dial-In</h2>
+          <p class="dial-in-intro">No passcode needed. Check today's conditions, pull shots until the time lands, then log it. Every log makes tomorrow's starting point smarter.</p>
+        </div>
+
+        <fieldset>
+          <legend>Today's conditions</legend>
+          <div class="dial-in-grid">
+            <div class="dial-in-field">
+              <label for="dial-in-barista">Barista name <span class="dial-in-optional">(optional)</span></label>
+              <input id="dial-in-barista" type="text" maxlength="80" autocomplete="name">
+            </div>
+            <div class="dial-in-field">
+              <label for="dial-in-bean">Bean / roast <span class="dial-in-optional">(optional)</span></label>
+              <input id="dial-in-bean" type="text" maxlength="80" autocomplete="off">
+            </div>
+            <div class="dial-in-field">
+              <label for="dial-in-roast-date">Roast date</label>
+              <input id="dial-in-roast-date" type="date">
+            </div>
+            <div class="dial-in-field">
+              <label for="dial-in-bean-age">Bean age (days off roast)</label>
+              <input id="dial-in-bean-age" type="number" min="0" max="365" step="1" inputmode="numeric">
+            </div>
+            <div class="dial-in-field">
+              <label for="dial-in-humidity">Outdoor humidity (%)</label>
+              <input id="dial-in-humidity" type="number" min="0" max="100" step="1" inputmode="numeric">
+            </div>
+            <div class="dial-in-field">
+              <label for="dial-in-temp">Outdoor temp (°F)</label>
+              <input id="dial-in-temp" type="number" min="-40" max="130" step="0.1">
+            </div>
+            <div class="dial-in-field">
+              <label for="dial-in-pressure">Water pressure (bar)</label>
+              <input id="dial-in-pressure" type="number" min="0.1" max="15" step="0.1" value="9" inputmode="decimal">
+            </div>
+          </div>
+          <div class="dial-in-inline">
+            <p id="dial-in-weather-status" class="dial-in-hint" aria-live="polite"></p>
+            <button id="dial-in-weather-refresh" class="btn btn-secondary btn-small" type="button">Refresh weather</button>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Recipe</legend>
+          <div class="dial-in-grid">
+            <div class="dial-in-field">
+              <label for="dial-in-dose">Dose (g)</label>
+              <input id="dial-in-dose" type="number" min="5" max="30" step="0.1" value="18" inputmode="decimal">
+            </div>
+            <div class="dial-in-field">
+              <label for="dial-in-yield">Yield (g)</label>
+              <input id="dial-in-yield" type="number" min="5" max="120" step="0.1" value="36" inputmode="decimal" aria-describedby="dial-in-yield-hint">
+            </div>
+            <div class="dial-in-field">
+              <label for="dial-in-target-time">Target time (s)</label>
+              <input id="dial-in-target-time" type="number" min="5" max="120" step="0.5" value="28" inputmode="decimal">
+            </div>
+          </div>
+          <p id="dial-in-yield-hint" class="dial-in-hint">Yield is the espresso in the cup. Weigh it on the scale — grams beat eyeballing volume.</p>
+        </fieldset>
+
+        <details id="dial-in-calibration">
+          <summary>Calibration constants</summary>
+          <div class="dial-in-grid">
+            <div class="dial-in-field">
+              <label for="dial-in-beta-s">β<sub>s</sub> (per click)</label>
+              <input id="dial-in-beta-s" type="number" min="0.01" max="5" step="0.01" value="0.18" inputmode="decimal">
+            </div>
+            <div class="dial-in-field">
+              <label for="dial-in-beta-d">β<sub>d</sub> (dose)</label>
+              <input id="dial-in-beta-d" type="number" min="0.1" max="10" step="0.1" value="2" inputmode="decimal">
+            </div>
+            <div class="dial-in-field">
+              <label for="dial-in-tolerance">Time tolerance (± s)</label>
+              <input id="dial-in-tolerance" type="number" min="0.5" max="10" step="0.5" value="2" inputmode="decimal">
+            </div>
+            <label class="dial-in-check dial-in-wide" for="dial-in-coarser"><input id="dial-in-coarser" type="checkbox" checked> Higher click number = coarser</label>
+          </div>
+          <p class="dial-in-hint"><strong>β<sub>s</sub>:</strong> pull two shots one click apart with the same dose; β<sub>s</sub> = |ln(time A ÷ time B)|. <strong>β<sub>d</sub>:</strong> pull two shots at the same click with different doses (e.g. 17.5 g and 18.5 g); β<sub>d</sub> = ln(time 2 ÷ time 1) ÷ ln(dose 2 ÷ dose 1). The helper below does the math. Saved on this device and with every log.</p>
+          <p id="dial-in-trim-note" class="dial-in-warning" hidden></p>
+          <div class="dial-in-helper">
+            <h3>β<sub>s</sub> helper</h3>
+            <div class="dial-in-grid">
+              <div class="dial-in-field">
+                <label for="dial-in-bs-a">Shot A time (s)</label>
+                <input id="dial-in-bs-a" type="number" min="1" step="0.1" inputmode="decimal">
+              </div>
+              <div class="dial-in-field">
+                <label for="dial-in-bs-b">Shot B time (s), 1 click away</label>
+                <input id="dial-in-bs-b" type="number" min="1" step="0.1" inputmode="decimal">
+              </div>
+              <div class="dial-in-field">
+                <button id="dial-in-bs-use" class="btn btn-secondary" type="button" disabled>Use β<sub>s</sub><span class="dial-in-helper-value"></span></button>
+              </div>
+            </div>
+            <h3 style="margin-top:12px;">β<sub>d</sub> helper</h3>
+            <div class="dial-in-grid">
+              <div class="dial-in-field">
+                <label for="dial-in-bd-d1">Dose 1 (g)</label>
+                <input id="dial-in-bd-d1" type="number" min="1" step="0.1" inputmode="decimal">
+              </div>
+              <div class="dial-in-field">
+                <label for="dial-in-bd-t1">Time 1 (s)</label>
+                <input id="dial-in-bd-t1" type="number" min="1" step="0.1" inputmode="decimal">
+              </div>
+              <div class="dial-in-field">
+                <label for="dial-in-bd-d2">Dose 2 (g)</label>
+                <input id="dial-in-bd-d2" type="number" min="1" step="0.1" inputmode="decimal">
+              </div>
+              <div class="dial-in-field">
+                <label for="dial-in-bd-t2">Time 2 (s)</label>
+                <input id="dial-in-bd-t2" type="number" min="1" step="0.1" inputmode="decimal">
+              </div>
+              <div class="dial-in-field">
+                <button id="dial-in-bd-use" class="btn btn-secondary" type="button" disabled>Use β<sub>d</sub><span class="dial-in-helper-value"></span></button>
+              </div>
+            </div>
+            <div class="dial-in-inline">
+              <button id="dial-in-reset-constants" class="btn btn-secondary btn-small" type="button">Reset constants to defaults</button>
+            </div>
+          </div>
+        </details>
+
+        <section id="dial-in-prediction" class="dial-in-prediction" aria-labelledby="dial-in-prediction-title">
+          <h3 id="dial-in-prediction-title">Predicted starting point</h3>
+          <div id="dial-in-prediction-body" aria-live="polite"><p class="dial-in-hint">Loading recent dial-ins…</p></div>
+        </section>
+
+        <fieldset>
+          <legend>Shots</legend>
+          <p id="dial-in-target-summary" class="dial-in-hint"></p>
+          <ol id="dial-in-shots" class="dial-in-shots"></ol>
+          <div class="dial-in-inline">
+            <button id="dial-in-add-shot" class="btn btn-secondary" type="button">Add shot</button>
+            <button id="dial-in-remove-shot" class="btn btn-secondary" type="button">Remove last shot</button>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Tasting <span class="dial-in-optional">(optional)</span></legend>
+          <div class="dial-in-grid">
+            <div class="dial-in-field">
+              <label for="dial-in-drink-age">Drink age (s)</label>
+              <input id="dial-in-drink-age" type="number" min="0" max="3600" step="1" inputmode="numeric" aria-describedby="dial-in-drink-age-hint">
+            </div>
+            <div class="dial-in-field dial-in-wide">
+              <label for="dial-in-notes">Notes</label>
+              <textarea id="dial-in-notes" maxlength="1000" rows="3" placeholder="Taste, channeling, anything odd…"></textarea>
+            </div>
+          </div>
+          <p id="dial-in-drink-age-hint" class="dial-in-hint">Drink age is the seconds from pour to tasting.</p>
+        </fieldset>
+
+        <div class="dial-in-hp" aria-hidden="true">
+          <label for="dial-in-website">Website</label>
+          <input id="dial-in-website" type="text" tabindex="-1" autocomplete="off">
+        </div>
+
+        <div class="dial-in-submit">
+          <button id="dial-in-submit" class="btn btn-primary" type="button">Log dial-in</button>
+          <div id="dial-in-status" aria-live="polite"></div>
+        </div>
+      </form>
+    </section>
+
     <h1>Opening & Closing Reports</h1>
     <p>Use the passcode below, then tap each item when completed. Opening report is above; closing report is below.</p>
     <div class="checklist-key" aria-label="Checklist key">
@@ -201,6 +420,12 @@
     <div style="margin-top:18px; font-size:0.9rem; color:#666">Provide the correct passcode before submitting.</div>
   </div>
 
+  <script src="dial-in.js"></script>
+  <script>
+    // Shared by the reports script and the espresso dial-in script below.
+    const SUPABASE_URL = 'https://ggqkabtiwlyvyjdbccjv.supabase.co';
+    const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_DJtzwlEdTev6JjY6ikrcaw_UwKWregs';
+  </script>
   <script>
     (function(){
       const openingForm = document.getElementById('opening-form');
@@ -224,8 +449,6 @@
 
       const CLOSEOUT_REPORT_ENDPOINT = 'https://ggqkabtiwlyvyjdbccjv.supabase.co/functions/v1/closeout-report';
       const REPORT_PASSCODE = 'BucketIsCool';
-      const SUPABASE_URL = 'https://ggqkabtiwlyvyjdbccjv.supabase.co';
-      const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_DJtzwlEdTev6JjY6ikrcaw_UwKWregs';
       const INVENTORY_ITEMS = [
         'Whole milk', 'Lactaid 1%', 'Oat', 'Almond', 'Cold brew beans',
         'Teas', 'Espresso', 'Decaf espresso', 'Light Pour Over',
@@ -590,6 +813,675 @@
         }
       });
 
+    })();
+  </script>
+  <script>
+    // Espresso dial-in: independent of the passcode-protected reports above.
+    (function(){
+      const DialIn = window.DialIn;
+      const form = document.getElementById('dial-in-form');
+      if (!form || !DialIn) return;
+
+      const WEATHER_URL = 'https://api.open-meteo.com/v1/forecast?latitude=41.57&longitude=-71.45&current=temperature_2m,relative_humidity_2m&temperature_unit=fahrenheit';
+      const LOGS_URL = `${SUPABASE_URL}/rest/v1/espresso_dial_in_logs`;
+      // anon can only read non-personal columns, so never request barista_name or notes.
+      const HISTORY_COLUMNS = [
+        'created_at', 'bean_name', 'roast_date', 'bean_age_days', 'outdoor_humidity_pct', 'outdoor_temp_f',
+        'pressure_bar', 'dose_target_g', 'yield_target_g', 'time_target_s', 'beta_s', 'beta_d',
+        'higher_is_coarser', 'virtual_setting'
+      ].join(',');
+      const HISTORY_LIMIT = 60;
+      const STORAGE_KEY = 'bucketandthebean.espressoDialIn.v1';
+      const SUPABASE_HEADERS = {
+        apikey: SUPABASE_PUBLISHABLE_KEY,
+        Authorization: `Bearer ${SUPABASE_PUBLISHABLE_KEY}`
+      };
+
+      const byId = (name) => document.getElementById(`dial-in-${name}`);
+      const fields = {
+        barista: byId('barista'), bean: byId('bean'), roastDate: byId('roast-date'), beanAge: byId('bean-age'),
+        humidity: byId('humidity'), temp: byId('temp'), pressure: byId('pressure'),
+        dose: byId('dose'), yield: byId('yield'), targetTime: byId('target-time'),
+        betaS: byId('beta-s'), betaD: byId('beta-d'), tolerance: byId('tolerance'), coarser: byId('coarser'),
+        drinkAge: byId('drink-age'), notes: byId('notes'), honeypot: byId('website')
+      };
+      const helper = {
+        bsA: byId('bs-a'), bsB: byId('bs-b'), bsUse: byId('bs-use'),
+        bdD1: byId('bd-d1'), bdT1: byId('bd-t1'), bdD2: byId('bd-d2'), bdT2: byId('bd-t2'), bdUse: byId('bd-use')
+      };
+      const SETTINGS = {
+        betaS: fields.betaS, betaD: fields.betaD, toleranceS: fields.tolerance,
+        doseG: fields.dose, yieldG: fields.yield, timeS: fields.targetTime
+      };
+      const CONDITIONS = [
+        { key: 'bean_age_days', input: fields.beanAge, ok: (v) => v >= 0 && v <= 365, message: 'Bean age must be 0–365 days (check the roast date).' },
+        { key: 'outdoor_humidity_pct', input: fields.humidity, ok: (v) => v >= 0 && v <= 100, message: 'Outdoor humidity must be 0–100%.' },
+        { key: 'outdoor_temp_f', input: fields.temp, ok: (v) => v >= -40 && v <= 130, message: 'Outdoor temp must be between -40 and 130 °F.' },
+        { key: 'pressure_bar', input: fields.pressure, ok: (v) => v > 0 && v <= 15, message: 'Water pressure must be above 0 and at most 15 bar.' }
+      ];
+      const weatherStatus = byId('weather-status');
+      const predictionBody = byId('prediction-body');
+      const trimNote = byId('trim-note');
+      const targetSummary = byId('target-summary');
+      const shotList = byId('shots');
+      const addShotButton = byId('add-shot');
+      const removeShotButton = byId('remove-shot');
+      const submitButton = byId('submit');
+      const statusEl = byId('status');
+
+      const state = {
+        history: [],
+        historyStatus: 'loading',
+        prediction: null,
+        touched: new Set(),
+        hasSavedSettings: false,
+        submitting: false
+      };
+
+      function numberValue(input) { return DialIn.toNumber(input.value.trim()); }
+      function inRange(value, min, max) { return value !== null && value >= min && value <= max; }
+      function fixed(value, digits) { return Number(value).toFixed(digits); }
+      function short(value, digits = 1) { return String(Number(Number(value).toFixed(digits))); }
+      function plural(count, word) { return `${count} ${word}${count === 1 ? '' : 's'}`; }
+
+      function localDateKey(date) {
+        return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+      }
+
+      function el(tag, className, text) {
+        const node = document.createElement(tag);
+        if (className) node.className = className;
+        if (text !== undefined) node.textContent = text;
+        return node;
+      }
+
+      function readRecipe() {
+        const recipe = { doseG: numberValue(fields.dose), yieldG: numberValue(fields.yield), timeS: numberValue(fields.targetTime) };
+        const errors = [];
+        if (!inRange(recipe.doseG, 5, 30)) errors.push('Dose must be 5–30 g.');
+        if (!inRange(recipe.yieldG, 5, 120)) errors.push('Yield must be 5–120 g.');
+        if (!inRange(recipe.timeS, 5, 120)) errors.push('Target time must be 5–120 s.');
+        return { recipe, errors };
+      }
+
+      function readConstants() {
+        const constants = {
+          betaS: numberValue(fields.betaS),
+          betaD: numberValue(fields.betaD),
+          toleranceS: numberValue(fields.tolerance),
+          higherIsCoarser: fields.coarser.checked
+        };
+        const errors = [];
+        if (!(constants.betaS > 0 && constants.betaS <= 5)) errors.push('β_s must be above 0 and at most 5.');
+        if (!(constants.betaD > 0 && constants.betaD <= 10)) errors.push('β_d must be above 0 and at most 10.');
+        if (!inRange(constants.toleranceS, 0, 30)) errors.push('Time tolerance must be 0–30 s.');
+        return { constants, errors };
+      }
+
+      // Out-of-range conditions are left out of the prediction instead of skewing it.
+      function readConditions() {
+        const values = {};
+        const today = {};
+        const errors = [];
+        CONDITIONS.forEach(({ key, input, ok, message }) => {
+          const value = numberValue(input);
+          values[key] = value;
+          today[key] = value !== null && ok(value) ? value : null;
+          if (value !== null && !ok(value)) errors.push(message);
+        });
+        return { values, today, errors };
+      }
+
+      function saveSettings() {
+        const saved = { higherIsCoarser: fields.coarser.checked };
+        Object.entries(SETTINGS).forEach(([key, input]) => {
+          const value = numberValue(input);
+          if (value !== null) saved[key] = value;
+        });
+        try {
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(saved));
+          state.hasSavedSettings = true;
+        } catch (error) {
+          console.error(error);
+        }
+      }
+
+      function applySettings(values, onlyUntouched) {
+        if (!values || typeof values !== 'object') return;
+        Object.entries(SETTINGS).forEach(([key, input]) => {
+          const value = DialIn.toNumber(values[key]);
+          if (value === null || (onlyUntouched && state.touched.has(input.id))) return;
+          input.value = String(value);
+        });
+        if (typeof values.higherIsCoarser === 'boolean' && !(onlyUntouched && state.touched.has(fields.coarser.id))) {
+          fields.coarser.checked = values.higherIsCoarser;
+        }
+      }
+
+      function loadSettings() {
+        try {
+          const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || 'null');
+          if (saved && typeof saved === 'object') {
+            applySettings(saved, false);
+            state.hasSavedSettings = true;
+          }
+        } catch (error) {
+          console.error(error);
+        }
+      }
+
+      function updateBeanAgeFromRoastDate() {
+        const age = DialIn.beanAgeDays(fields.roastDate.value);
+        fields.beanAge.value = age === null ? '' : String(age);
+      }
+
+      function updateRoastDateFromBeanAge() {
+        const age = numberValue(fields.beanAge);
+        if (age === null || !Number.isInteger(age) || age < 0 || age > 365) {
+          fields.roastDate.value = '';
+          return;
+        }
+        const roast = new Date();
+        roast.setHours(0, 0, 0, 0);
+        roast.setDate(roast.getDate() - age);
+        fields.roastDate.value = localDateKey(roast);
+      }
+
+      // New devices start from the last logged bean, pressure and (if nothing is saved locally) constants.
+      function applyHistoryDefaults() {
+        const latest = DialIn.dailyHistory(state.history).slice(-1)[0];
+        if (!latest) return;
+        if (!state.hasSavedSettings) {
+          applySettings({
+            betaS: latest.beta_s,
+            betaD: latest.beta_d,
+            higherIsCoarser: latest.higher_is_coarser,
+            doseG: latest.dose_target_g,
+            yieldG: latest.yield_target_g,
+            timeS: latest.time_target_s
+          }, true);
+        }
+        if (latest.bean_name && !state.touched.has(fields.bean.id) && fields.bean.value === '') {
+          fields.bean.value = latest.bean_name;
+        }
+        const untouchedBeanAge = !state.touched.has(fields.roastDate.id) && !state.touched.has(fields.beanAge.id);
+        if (latest.roast_date && untouchedBeanAge && fields.roastDate.value === '') {
+          fields.roastDate.value = latest.roast_date;
+          updateBeanAgeFromRoastDate();
+        }
+        if (DialIn.toNumber(latest.pressure_bar) !== null && !state.touched.has(fields.pressure.id)) {
+          fields.pressure.value = String(DialIn.toNumber(latest.pressure_bar));
+        }
+      }
+
+      async function loadHistory() {
+        state.historyStatus = 'loading';
+        try {
+          const url = `${LOGS_URL}?select=${HISTORY_COLUMNS}&order=created_at.desc&limit=${HISTORY_LIMIT}`;
+          const response = await fetch(url, { headers: SUPABASE_HEADERS });
+          if (!response.ok) throw new Error(`Dial-in history request failed: ${response.status}`);
+          const rows = await response.json();
+          state.history = Array.isArray(rows) ? rows : [];
+          state.historyStatus = 'ready';
+          applyHistoryDefaults();
+        } catch (error) {
+          console.error(error);
+          state.history = [];
+          state.historyStatus = 'error';
+        }
+        refresh();
+      }
+
+      async function loadWeather(force) {
+        weatherStatus.textContent = 'Checking the weather in North Kingstown…';
+        const controller = typeof AbortController === 'function' ? new AbortController() : null;
+        const timer = controller ? setTimeout(() => controller.abort(), 8000) : null;
+        try {
+          const response = await fetch(WEATHER_URL, controller ? { signal: controller.signal } : undefined);
+          if (!response.ok) throw new Error(`Weather request failed: ${response.status}`);
+          const weather = DialIn.parseOpenMeteoCurrent(await response.json());
+          if (!weather) throw new Error('Weather response did not include current conditions.');
+          [[fields.humidity, weather.humidityPct], [fields.temp, weather.tempF]].forEach(([input, value]) => {
+            if (!force && state.touched.has(input.id)) return;
+            input.value = String(value);
+            state.touched.delete(input.id);
+          });
+          const time = new Date().toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' });
+          weatherStatus.textContent = `Auto-filled from Open-Meteo for North Kingstown at ${time}. Edit if needed.`;
+        } catch (error) {
+          console.error(error);
+          weatherStatus.textContent = "Couldn't load the weather. Enter outdoor humidity and temp from a weather app.";
+        } finally {
+          if (timer) clearTimeout(timer);
+        }
+        refresh();
+      }
+
+      function directionWord(clicks, higherIsCoarser) {
+        if (Math.abs(clicks) < 0.05) return 'no change';
+        return (clicks > 0) === higherIsCoarser ? 'coarser' : 'finer';
+      }
+
+      function signedClicks(value) {
+        const rounded = Math.abs(value) < 0.05 ? 0 : value;
+        const sign = rounded > 0 ? '+' : rounded < 0 ? '−' : '±';
+        return `${sign}${fixed(Math.abs(rounded), 1)}`;
+      }
+
+      function featureText(value, item) {
+        if (value === null) return '—';
+        const digits = item.key === 'outdoor_temp_f' || item.key === 'pressure_bar' ? 1 : 0;
+        const gap = item.unit === '%' || item.unit === '°F' ? '' : ' ';
+        return `${short(value, digits)}${gap}${item.unit}`;
+      }
+
+      function dayLabel(value) {
+        const date = new Date(value);
+        if (localDateKey(date) === localDateKey(new Date())) return 'earlier today';
+        return date.toLocaleDateString([], { weekday: 'short', month: 'short', day: 'numeric' });
+      }
+
+      function renderPrediction(recipeResult, constantsResult, conditions) {
+        predictionBody.replaceChildren();
+        state.prediction = null;
+        if (state.historyStatus === 'loading') {
+          predictionBody.append(el('p', 'dial-in-hint', 'Loading recent dial-ins…'));
+          return;
+        }
+        const problems = [...recipeResult.errors, ...constantsResult.errors];
+        if (problems.length) {
+          predictionBody.append(el('p', 'dial-in-error', `Fix the recipe or calibration values to see a prediction. ${problems.join(' ')}`));
+          return;
+        }
+        const { recipe } = recipeResult;
+        const { constants } = constantsResult;
+        const prediction = DialIn.predictSetting({ rows: state.history, today: conditions.today, recipe, constants });
+        if (!prediction.hasHistory) {
+          predictionBody.append(el('p', null, state.historyStatus === 'error'
+            ? "Couldn't load past dial-ins right now. Start at your usual setting and enter that click in Shot 1."
+            : 'First day — start at your usual setting and enter that click in Shot 1. Once today is logged, tomorrow gets a prediction.'));
+          return;
+        }
+
+        state.prediction = prediction;
+        const { recommendation } = prediction;
+        const reco = el('p', 'dial-in-reco');
+        reco.append(el('span', null, `Click ${recommendation.click}`), el('span', null, `${fixed(recommendation.doseG, 1)} g dose`));
+        predictionBody.append(reco);
+        predictionBody.append(el('p', 'dial-in-hint',
+          `Starts from ${dayLabel(prediction.reference.created_at)}'s dialed-in setting (${fixed(prediction.referenceSetting, 1)}).`));
+
+        if (prediction.fitted) {
+          predictionBody.append(el('p', 'dial-in-hint',
+            `Adjusted using ${plural(prediction.daysUsed, 'day')} of history (${plural(prediction.deltaRows, 'day-to-day change')}):`));
+          const list = el('ul', 'dial-in-contributions');
+          prediction.contributions.forEach((item) => {
+            list.append(el('li', null,
+              `${item.label} ${featureText(item.from, item)} → ${featureText(item.to, item)}: ${signedClicks(item.clicks)} click (${directionWord(item.clicks, constants.higherIsCoarser)})`));
+          });
+          predictionBody.append(list);
+          const skipped = DialIn.FEATURES
+            .filter((feature) => !prediction.contributions.some((item) => item.key === feature.key))
+            .map((feature) => feature.label);
+          if (skipped.length) {
+            predictionBody.append(el('p', 'dial-in-hint', `Not adjusted for ${skipped.join(', ')} (no value today or on the reference day).`));
+          }
+        } else {
+          predictionBody.append(el('p', 'dial-in-hint',
+            `${plural(prediction.daysUsed, 'day')} of history. Weather and bean-age adjustments start after ${prediction.minFitRows} day-to-day changes (${prediction.deltaRows} so far), so this is the last dialed-in setting.`));
+        }
+
+        const trim = DialIn.trimInfo(recipe, constants);
+        if (trim.exceedsLimit && trim.worstCaseTimeErrorS > constants.toleranceS) {
+          predictionBody.append(el('p', 'dial-in-warning',
+            `⚠️ Dose trims can't cover half a click with these constants, so shots may land up to ~${fixed(trim.worstCaseTimeErrorS, 1)} s off — more than your ±${short(constants.toleranceS)} s tolerance.`));
+        }
+      }
+
+      function renderTrimNote(recipeResult, constantsResult) {
+        if (recipeResult.errors.length || constantsResult.errors.length) {
+          trimNote.hidden = true;
+          return;
+        }
+        const trim = DialIn.trimInfo(recipeResult.recipe, constantsResult.constants);
+        trimNote.hidden = !trim.exceedsLimit;
+        trimNote.textContent = `⚠️ Half a click is worth about ${fixed(trim.maxTrimNeededG, 2)} g of dose, but trims are capped at ±${trim.limitG} g, so a recommended shot can land up to ~${fixed(trim.worstCaseTimeErrorS, 1)} s off target. That's expected — just follow the next suggestion.`;
+      }
+
+      function createShotRow() {
+        const index = shotList.children.length + 1;
+        const row = el('li', 'dial-in-shot');
+        row.append(el('div', 'dial-in-shot-title', `Shot ${index}`));
+        const grid = el('div', 'dial-in-shot-fields');
+        [
+          ['click', 'Click', { step: '1', inputmode: 'numeric' }],
+          ['dose', 'Dose (g)', { min: '5', max: '30', step: '0.1', inputmode: 'decimal' }],
+          ['time', 'Time (s)', { min: '5', max: '120', step: '0.1', inputmode: 'decimal' }]
+        ].forEach(([name, labelText, attributes]) => {
+          const id = `dial-in-shot-${index}-${name}`;
+          const wrapper = el('div', 'dial-in-field');
+          const label = el('label', null, labelText);
+          label.htmlFor = id;
+          const input = document.createElement('input');
+          input.id = id;
+          input.type = 'number';
+          input.dataset.shotField = name;
+          Object.entries(attributes).forEach(([key, value]) => input.setAttribute(key, value));
+          wrapper.append(label, input);
+          grid.append(wrapper);
+        });
+        const result = el('p', 'dial-in-shot-result');
+        result.setAttribute('aria-live', 'polite');
+        row.append(grid, result);
+        shotList.append(row);
+        return row;
+      }
+
+      function shotInput(row, name) {
+        return row.querySelector(`[data-shot-field="${name}"]`);
+      }
+
+      function readShot(row) {
+        const shot = {
+          click: numberValue(shotInput(row, 'click')),
+          doseG: numberValue(shotInput(row, 'dose')),
+          timeS: numberValue(shotInput(row, 'time')),
+          errors: []
+        };
+        if (shot.click === null || !Number.isInteger(shot.click) || Math.abs(shot.click) > 1000) shot.errors.push('Enter the whole click number.');
+        if (!inRange(shot.doseG, 5, 30)) shot.errors.push('Dose must be 5–30 g.');
+        if (shot.timeS !== null && !inRange(shot.timeS, 5, 120)) shot.errors.push('Time must be 5–120 s.');
+        return shot;
+      }
+
+      function firstShotPrefill(recipe) {
+        if (state.prediction) {
+          return { click: state.prediction.recommendation.click, doseG: state.prediction.recommendation.doseG };
+        }
+        return { click: null, doseG: recipe.doseG };
+      }
+
+      function nextShotPrefill(previous) {
+        if (!previous) return null;
+        const { shot, evaluation } = previous;
+        return evaluation.next
+          ? { click: evaluation.next.click, doseG: evaluation.next.doseG }
+          : { click: shot.click, doseG: shot.doseG };
+      }
+
+      function describeShot(shot, evaluation, recipe, constants, isLast) {
+        const target = `target ${short(recipe.timeS)} ± ${short(constants.toleranceS)} s`;
+        if (evaluation.inTolerance) {
+          return `✅ Dialed in at ${short(shot.timeS)} s (${target}).${isLast ? ' Log it below.' : ''}`;
+        }
+        const { next } = evaluation;
+        const speed = evaluation.direction === 'fast'
+          ? `⏩ ${short(Math.abs(evaluation.deltaS))} s fast`
+          : `🐢 ${short(evaluation.deltaS)} s slow`;
+        const clickDelta = next.click - shot.click;
+        const change = clickDelta === 0
+          ? 'same click'
+          : `${plural(Math.abs(clickDelta), 'click')} ${directionWord(clickDelta, constants.higherIsCoarser)}`;
+        const purge = clickDelta === 0 ? '' : ' Purge the grinder after changing clicks.';
+        return `${speed} (${target}). Next: click ${next.click} · ${fixed(next.doseG, 1)} g (${change}).${purge}`;
+      }
+
+      function refreshShots(recipeResult, constantsResult) {
+        const ready = recipeResult.errors.length === 0 && constantsResult.errors.length === 0;
+        const { recipe } = recipeResult;
+        const { constants } = constantsResult;
+        const rows = Array.from(shotList.children);
+        let previous = null;
+        rows.forEach((row, index) => {
+          const clickInput = shotInput(row, 'click');
+          const doseInput = shotInput(row, 'dose');
+          // Untouched rows follow the latest recommendation until a time is entered for them.
+          if (ready && row.dataset.edited !== 'true' && shotInput(row, 'time').value.trim() === '') {
+            const prefill = index === 0 ? firstShotPrefill(recipe) : nextShotPrefill(previous);
+            if (prefill) {
+              clickInput.value = prefill.click === null ? '' : String(prefill.click);
+              doseInput.value = fixed(prefill.doseG, 1);
+            }
+          }
+          const result = row.querySelector('.dial-in-shot-result');
+          result.className = 'dial-in-shot-result';
+          const shot = readShot(row);
+          previous = null;
+          if (!ready || shot.timeS === null) {
+            result.textContent = '';
+            return;
+          }
+          if (shot.errors.length) {
+            result.classList.add('dial-in-error');
+            result.textContent = shot.errors.join(' ');
+            return;
+          }
+          const evaluation = DialIn.evaluateShot(shot, recipe, constants);
+          previous = { shot, evaluation };
+          result.classList.add(evaluation.inTolerance ? 'is-ok' : 'is-off');
+          result.textContent = describeShot(shot, evaluation, recipe, constants, index === rows.length - 1);
+        });
+
+        const last = rows[rows.length - 1];
+        const lastHasTime = Boolean(last) && shotInput(last, 'time').value.trim() !== '';
+        const atLimit = rows.length >= DialIn.MAX_SHOTS;
+        addShotButton.hidden = !lastHasTime;
+        addShotButton.disabled = atLimit;
+        addShotButton.textContent = atLimit ? `${DialIn.MAX_SHOTS} shots max` : 'Add shot';
+        removeShotButton.hidden = rows.length <= 1;
+      }
+
+      // Only touch the value <span> (never innerHTML): a blur-triggered refresh mid-tap
+      // would otherwise replace the pressed node and swallow the click.
+      function setHelperButton(button, value) {
+        const text = value ? ` = ${value}` : '';
+        const span = button.querySelector('.dial-in-helper-value');
+        button.disabled = !value;
+        button.dataset.value = value;
+        if (span.textContent !== text) span.textContent = text;
+      }
+
+      function refreshHelpers() {
+        const betaS = DialIn.measureBetaS(helper.bsA.value, helper.bsB.value);
+        const betaSOk = betaS !== null && betaS > 0 && betaS <= 5;
+        setHelperButton(helper.bsUse, betaSOk ? fixed(betaS, 3) : '');
+
+        const betaD = DialIn.measureBetaD(helper.bdT1.value, helper.bdD1.value, helper.bdT2.value, helper.bdD2.value);
+        const betaDOk = betaD !== null && betaD > 0 && betaD <= 10;
+        setHelperButton(helper.bdUse, betaDOk ? fixed(betaD, 2) : '');
+      }
+
+      function refresh() {
+        const recipeResult = readRecipe();
+        const constantsResult = readConstants();
+        const conditions = readConditions();
+        renderPrediction(recipeResult, constantsResult, conditions);
+        renderTrimNote(recipeResult, constantsResult);
+        refreshShots(recipeResult, constantsResult);
+        if (recipeResult.errors.length || constantsResult.errors.length) {
+          targetSummary.textContent = '';
+        } else {
+          const { recipe } = recipeResult;
+          targetSummary.textContent = `Target: ${short(recipe.doseG)} g in → ${short(recipe.yieldG)} g out in ${short(recipe.timeS)} ± ${short(constantsResult.constants.toleranceS)} s. Enter each shot's time and follow the next suggestion.`;
+        }
+      }
+
+      function buildLog() {
+        const recipeResult = readRecipe();
+        const constantsResult = readConstants();
+        const conditions = readConditions();
+        const errors = [...recipeResult.errors, ...constantsResult.errors, ...conditions.errors];
+        const pulled = [];
+        Array.from(shotList.children).forEach((row, index) => {
+          const shot = readShot(row);
+          if (shot.timeS === null) return;
+          shot.errors.forEach((message) => errors.push(`Shot ${index + 1}: ${message}`));
+          pulled.push(shot);
+        });
+        if (pulled.length === 0) errors.push('Pull at least one shot and enter its time.');
+        const drinkAge = numberValue(fields.drinkAge);
+        if (drinkAge !== null && !inRange(drinkAge, 0, 3600)) errors.push('Drink age must be 0–3600 s.');
+        const baristaName = fields.barista.value.trim().slice(0, 80);
+        const beanName = fields.bean.value.trim().slice(0, 80);
+        const notes = fields.notes.value.trim().slice(0, 1000);
+        if (errors.length) return { errors };
+
+        const { recipe } = recipeResult;
+        const { constants } = constantsResult;
+        const summary = DialIn.summarizeShots(pulled, recipe, constants);
+        const virtualSetting = Number(summary.virtualSetting.toFixed(4));
+        if (!inRange(virtualSetting, -1000, 1000)) {
+          return { errors: ['These shots give an impossible grind setting. Double-check the click, dose, and time values.'] };
+        }
+        const recommendation = state.prediction ? state.prediction.recommendation : null;
+        return {
+          errors: [],
+          log: {
+            barista_name: baristaName || null,
+            bean_name: beanName || null,
+            roast_date: fields.roastDate.value || null,
+            bean_age_days: conditions.values.bean_age_days,
+            outdoor_humidity_pct: conditions.values.outdoor_humidity_pct,
+            outdoor_temp_f: conditions.values.outdoor_temp_f,
+            pressure_bar: conditions.values.pressure_bar,
+            dose_target_g: recipe.doseG,
+            yield_target_g: recipe.yieldG,
+            time_target_s: recipe.timeS,
+            beta_s: constants.betaS,
+            beta_d: constants.betaD,
+            higher_is_coarser: constants.higherIsCoarser,
+            predicted_click: recommendation ? recommendation.click : null,
+            predicted_dose_g: recommendation && inRange(recommendation.doseG, 5, 30) ? recommendation.doseG : null,
+            final_click: summary.final.click,
+            final_dose_g: summary.final.doseG,
+            final_time_s: summary.final.timeS,
+            virtual_setting: virtualSetting,
+            shots_count: summary.count,
+            shots: summary.shots,
+            drink_age_s: drinkAge,
+            notes: notes || null
+          }
+        };
+      }
+
+      function showErrors(errors) {
+        const box = el('div', 'dial-in-error', errors.length === 1 ? errors[0] : 'Please fix the following:');
+        if (errors.length > 1) {
+          const list = el('ul');
+          errors.forEach((message) => list.append(el('li', null, message)));
+          box.append(list);
+        }
+        statusEl.replaceChildren(box);
+      }
+
+      function finishSubmit(log) {
+        if (log) {
+          const { barista_name: _name, notes: _notes, ...shared } = log;
+          state.history.unshift({ ...shared, created_at: new Date().toISOString() });
+        }
+        shotList.replaceChildren();
+        createShotRow();
+        fields.drinkAge.value = '';
+        fields.notes.value = '';
+        fields.honeypot.value = '';
+        refresh();
+        statusEl.replaceChildren(el('div', 'success', "Dial-in logged — thanks! Tomorrow's starting point will use it."));
+      }
+
+      async function submitLog() {
+        if (state.submitting) return;
+        statusEl.replaceChildren();
+        const { errors, log } = buildLog();
+        if (errors.length) {
+          showErrors(errors);
+          return;
+        }
+        // Bots fill the hidden field; pretend it worked without saving anything.
+        if (fields.honeypot.value.trim() !== '') {
+          finishSubmit(null);
+          return;
+        }
+        state.submitting = true;
+        submitButton.disabled = true;
+        statusEl.textContent = 'Saving…';
+        try {
+          const response = await fetch(LOGS_URL, {
+            method: 'POST',
+            headers: { ...SUPABASE_HEADERS, 'Content-Type': 'application/json', Prefer: 'return=minimal' },
+            body: JSON.stringify(log)
+          });
+          if (!response.ok) {
+            console.error('dial-in log error', response.status, await response.text());
+            statusEl.replaceChildren(el('div', 'dial-in-error', 'Could not save the dial-in. Please try again or let a manager know.'));
+            return;
+          }
+          finishSubmit(log);
+        } catch (error) {
+          console.error(error);
+          statusEl.replaceChildren(el('div', 'dial-in-error', 'Network error. Please try again.'));
+        } finally {
+          state.submitting = false;
+          submitButton.disabled = false;
+        }
+      }
+
+      function applyMeasured(input, value) {
+        if (!value) return;
+        input.value = value;
+        state.touched.add(input.id);
+        saveSettings();
+        refresh();
+      }
+
+      function handleFieldChange(event) {
+        const target = event.target;
+        if (!target || !target.id || target === fields.honeypot) return;
+        state.touched.add(target.id);
+        if (target.dataset.shotField === 'click' || target.dataset.shotField === 'dose') {
+          target.closest('.dial-in-shot').dataset.edited = 'true';
+        }
+        if (target === fields.roastDate) updateBeanAgeFromRoastDate();
+        if (target === fields.beanAge) updateRoastDateFromBeanAge();
+        if (target.closest('.dial-in-helper')) {
+          refreshHelpers();
+          return;
+        }
+        if (Object.values(SETTINGS).includes(target) || target === fields.coarser) saveSettings();
+        refresh();
+      }
+
+      form.addEventListener('submit', (event) => event.preventDefault());
+      form.addEventListener('input', handleFieldChange);
+      form.addEventListener('change', handleFieldChange);
+      addShotButton.addEventListener('click', () => {
+        if (shotList.children.length >= DialIn.MAX_SHOTS) return;
+        createShotRow();
+        refresh();
+      });
+      removeShotButton.addEventListener('click', () => {
+        if (shotList.children.length > 1) shotList.lastElementChild.remove();
+        refresh();
+      });
+      byId('weather-refresh').addEventListener('click', () => loadWeather(true));
+      helper.bsUse.addEventListener('click', () => applyMeasured(fields.betaS, helper.bsUse.dataset.value));
+      helper.bdUse.addEventListener('click', () => applyMeasured(fields.betaD, helper.bdUse.dataset.value));
+      byId('reset-constants').addEventListener('click', () => {
+        const defaults = DialIn.DEFAULT_CONSTANTS;
+        fields.betaS.value = String(defaults.betaS);
+        fields.betaD.value = String(defaults.betaD);
+        fields.tolerance.value = String(defaults.toleranceS);
+        fields.coarser.checked = defaults.higherIsCoarser;
+        saveSettings();
+        refresh();
+      });
+      submitButton.addEventListener('click', submitLog);
+
+      loadSettings();
+      createShotRow();
+      refreshHelpers();
+      refresh();
+      loadHistory();
+      loadWeather(false);
     })();
   </script>
 </body>
