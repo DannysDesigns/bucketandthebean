@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow, noarchive" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <title>Content Trend Radar | Bucket &amp; the Bean</title>
+    <link rel="icon" href="/Images/main-logo.jpg" type="image/jpeg" />
+    <link rel="stylesheet" href="/content/content.css" />
+    <noscript><style>#loading { display: none; }</style></noscript>
+    <script src="/content/content.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/">
+        <img src="/Images/main-logo.jpg" alt="" width="40" height="40" />
+        <span>Bucket &amp; the Bean</span>
+      </a>
+      <span class="header-tag">Team page</span>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="page-title">
+        <p class="eyebrow">For the Bucket &amp; the Bean team</p>
+        <h1 id="page-title">Content Trend Radar</h1>
+        <p class="hero-sub">What's worth filming for TikTok and Instagram Reels, seen through the eyes of our coffee-shop crowd.</p>
+        <dl class="dates">
+          <div>
+            <dt>Last updated</dt>
+            <dd id="last-updated">&mdash;</dd>
+          </div>
+          <div>
+            <dt>Next refresh</dt>
+            <dd id="next-refresh">&mdash;</dd>
+          </div>
+        </dl>
+        <p id="headline" class="headline" hidden></p>
+        <p id="stale-notice" class="notice notice-warn" role="status" hidden></p>
+      </section>
+
+      <noscript>
+        <p class="notice notice-error">This page needs JavaScript to show the trend radar. Please turn JavaScript on, or open the link in your phone's regular browser.</p>
+      </noscript>
+
+      <p id="loading" class="notice">Loading this week's trends&hellip;</p>
+
+      <div id="error" class="notice notice-error" role="alert" hidden>
+        <p><strong>We couldn't load this week's trends.</strong></p>
+        <p>Check your connection and try again. If it keeps happening, the trends may be mid-update, so give it a few minutes.</p>
+        <button type="button" id="retry" class="button">Try again</button>
+      </div>
+
+      <div id="content" hidden>
+        <nav class="jump" aria-label="Jump to section">
+          <a href="#upcoming">Catch the wave</a>
+          <a href="#tail-end">Skip these</a>
+          <a href="#music">Music</a>
+          <a href="#calendar">Calendar</a>
+          <a href="#tips">Tips &amp; sources</a>
+        </nav>
+
+        <div class="toolbar">
+          <span class="toolbar-label" id="filter-label">Platform</span>
+          <div class="chips" role="group" aria-labelledby="filter-label">
+            <button type="button" class="chip" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" class="chip" data-filter="tiktok" aria-pressed="false">TikTok</button>
+            <button type="button" class="chip" data-filter="reels" aria-pressed="false">Instagram Reels</button>
+          </div>
+        </div>
+        <p id="filter-status" class="visually-hidden" aria-live="polite"></p>
+
+        <section id="upcoming" class="section" aria-labelledby="upcoming-title" data-filterable>
+          <div class="section-head">
+            <h2 id="upcoming-title">Catch the wave</h2>
+            <p>Upcoming trends. Get in before everyone else does.</p>
+          </div>
+          <ul class="legend" aria-label="Stage key">
+            <li><span class="badge badge-early">Early &mdash; post now</span> Just starting. Being first gets the most reach.</li>
+            <li><span class="badge badge-rising">Rising &mdash; post this week</span> Picking up speed. Still worth jumping on.</li>
+          </ul>
+          <div id="upcoming-list" class="card-grid"></div>
+          <p class="empty" hidden>No upcoming trends for this platform this week.</p>
+        </section>
+
+        <section id="tail-end" class="section" aria-labelledby="tail-end-title">
+          <div class="section-head">
+            <h2 id="tail-end-title">Tail end &mdash; skip these</h2>
+            <p>These have peaked. Posting them now will look late.</p>
+          </div>
+          <ul id="tail-end-list" class="fade-list"></ul>
+          <p class="empty" hidden>Nothing to skip this week.</p>
+        </section>
+
+        <section id="music" class="section" aria-labelledby="music-title" data-filterable>
+          <div class="section-head">
+            <h2 id="music-title">Popular music</h2>
+            <p>Sounds people are using right now, and how they'd fit our feed.</p>
+          </div>
+          <ul class="legend" aria-label="Business account key">
+            <li><span class="safe safe-yes">Business-safe</span> Cleared for business accounts.</li>
+            <li><span class="safe safe-check">Check first</span> Before posting from the business account, confirm it's in TikTok's Commercial Music Library or Meta's sound collection.</li>
+            <li><span class="safe safe-no">Not business-safe</span> Copy the format, but use a different sound.</li>
+          </ul>
+          <div id="music-list" class="card-grid music-grid"></div>
+          <p class="empty" hidden>No music picks for this platform this week.</p>
+        </section>
+
+        <section id="calendar" class="section" aria-labelledby="calendar-title">
+          <div class="section-head">
+            <h2 id="calendar-title">Coffee calendar</h2>
+            <p>Dates coming up and what to film for them.</p>
+          </div>
+          <ol id="calendar-list" class="calendar"></ol>
+          <p class="empty" hidden>No dates on the calendar right now.</p>
+        </section>
+
+        <section id="tips" class="section" aria-labelledby="tips-title">
+          <div class="section-head">
+            <h2 id="tips-title">How to spot trends early</h2>
+          </div>
+          <ol id="tips-list" class="tips"></ol>
+          <p class="empty" hidden>No tips this week.</p>
+
+          <h2 id="sources-title" class="sources-title">Sources</h2>
+          <ul id="sources-list" class="sources" aria-labelledby="sources-title"></ul>
+          <p class="empty" hidden>No sources listed.</p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>Refreshed every Monday. This page isn't linked anywhere on the site, so share the link only with the team.</p>
+      <p><a href="/">Back to Bucket &amp; the Bean</a></p>
+    </footer>
+  </body>
+</html>
