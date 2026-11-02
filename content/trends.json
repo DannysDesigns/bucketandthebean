@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-11-01",
+  "lastUpdated": "2026-11-02",
   "nextRefresh": "2026-11-09",
-  "headline": "Hyper-local is having a moment: #musteatinmycity is the fastest-growing hashtag on TikTok, so film a \"must-sip in North Kingstown\" this week and leave the Halloween formats behind.",
+  "headline": "Halloween is over, so shift to cozy November: #musteatinmycity is still the fastest-growing hashtag on TikTok, so film a \"must-sip in North Kingstown,\" and pair a \"Be OK\" relatable-confession Reel with the holiday menu teaser.",
   "upcoming": [
     {
       "name": "#musteatinmycity (\"Lunch in my city\")",
       "platforms": ["TikTok", "Instagram Reels"],
       "stage": "early",
       "firstSeen": "2026-11-01",
-      "signal": "The #1 fastest-growing TikTok hashtag worldwide on Tokchart (Nov 1, 2026). One example post has passed 200K likes. Post on TikTok first, then cross-post to Reels.",
+      "signal": "Still the #1 fastest-growing TikTok hashtag worldwide on Tokchart (Nov 2, 2026), second day in a row. One example post has passed 200K likes. Post on TikTok first, then cross-post to Reels.",
       "whatItIs": "Hyper-local food and drink recommendations: show the spot, film the first bite or first sip with an honest reaction, and tag the location so locals can find it.",
       "coffeeShopIdea": "\"Must-sip in North Kingstown\": film the first sip of an Autocrat coffee milk or a latte with a pastry from our local baker, and tag 679 Boston Neck Road. Invite regulars and our local business partners to film their own first sip, then repost the best ones.",
       "postBy": "2026-11-12",
@@ -60,6 +60,33 @@
       ]
     },
     {
+      "name": "\"Be OK\" (cheerful dance, relatable confession)",
+      "platforms": ["TikTok"],
+      "stage": "early",
+      "firstSeen": "2026-11-02",
+      "signal": "New this week on New Engen's TikTok trends list (updated Nov 2, 2026), #4 of 12 formats to watch.",
+      "whatItIs": "Dance happily to Ingrid Michaelson's upbeat song while on-screen text reveals something small that is definitely not okay, like sending \"please see attached\" with nothing attached. The contrast is the joke.",
+      "coffeeShopIdea": "A barista grins and sways behind the counter while the text reads \"me realizing I put the oat milk in the wrong fridge\" or \"when the pastry case is empty at 9 a.m.\" Do a customer version too: \"me after one sip of decaf.\" Keep it light and kind.",
+      "postBy": "2026-11-12",
+      "links": [
+        { "label": "How the trend works (New Engen)", "url": "https://newengen.com/insights/tiktok-trends/" }
+      ]
+    },
+    {
+      "name": "\"Housewife\" outfit and work reveal (format only)",
+      "platforms": ["TikTok"],
+      "stage": "rising",
+      "firstSeen": "2026-10-20",
+      "signal": "Still growing: Tokchart's US chart (Nov 2, 2026) shows the sound at about 439K videos with +27,400 new videos in a day, and New Engen lists it this week. Last week we called it faded, but the daily numbers say otherwise.",
+      "whatItIs": "A confident outfit reveal that cuts to clips of you doing the job that pays for it.",
+      "coffeeShopIdea": "Owner or barista in the Bucket & the Bean apron, then cut to pulling a shot, steaming milk, and pouring latte art. Use a clean sound from TikTok's Commercial Music Library or Meta's sound collection, because we haven't confirmed the original song's lyrics are family-friendly.",
+      "postBy": "2026-11-09",
+      "links": [
+        { "label": "Trend stats on Tokchart (US)", "url": "https://tokchart.com/tiktok-trending-sounds/united-states" },
+        { "label": "How the trend works (New Engen)", "url": "https://newengen.com/insights/tiktok-trends/" }
+      ]
+    },
+    {
       "name": "\"Vlog timestamps\"",
       "platforms": ["Instagram Reels"],
       "stage": "rising",
@@ -68,47 +95,6 @@
       "whatItIs": "A day-in-the-life vlog with a timestamp on every clip, so viewers can follow the day hour by hour.",
       "coffeeShopIdea": "A day at Bucket & the Bean from 6:30 a.m. open to 3:30 p.m. close: unlocking the door, the first espresso shot, the pastry drop-off from our baker, the morning rush, the art wall, and the last cup of the day. Use a clean, upbeat sound. We are not linking the sound usually paired with this trend because the original song has explicit lyrics.",
       "postBy": "2026-11-08",
-      "links": [
-        { "label": "Later's Reels trend list", "url": "https://later.com/blog/instagram-reels-trends/" }
-      ]
-    },
-    {
-      "name": "\"Refuse to be limited by a single niche\"",
-      "platforms": ["Instagram Reels"],
-      "stage": "rising",
-      "firstSeen": "2026-10-23",
-      "signal": "On Later's weekly Instagram Reels trend list since Oct 23, 2026, pitched for brands that want to show there's more to them than one lane.",
-      "whatItIs": "Open with a line like \"Niche? Never heard of her,\" then run through all your different sides one by one with a rapid-fire photo dump.",
-      "coffeeShopIdea": "\"Coffee shop? Never heard of her.\" Rapid-fire through everything we are: the espresso bar, this month's local artist on the walls, a weekly community event, the loose-leaf tea shelf, and our local business partners.",
-      "postBy": "2026-11-08",
-      "links": [
-        { "label": "Trend sound: Training Season by Dua Lipa", "url": "https://www.instagram.com/reels/audio/2085508281903593/" },
-        { "label": "Later's Reels trend list", "url": "https://later.com/blog/instagram-reels-trends/" }
-      ]
-    },
-    {
-      "name": "\"Money can't buy happiness, but...\"",
-      "platforms": ["Instagram Reels"],
-      "stage": "rising",
-      "firstSeen": "2026-10-16",
-      "signal": "On Later's weekly Instagram Reels trend list since Oct 16, 2026. It's a couple of weeks old, so post soon.",
-      "whatItIs": "On-screen text reads \"Money can't buy happiness, but...\" and then cuts to the small, everyday thing that makes you happy.",
-      "coffeeShopIdea": "\"...it can buy a maple latte with house-made syrup.\" Make a few versions: an Autocrat coffee milk, a pastry from our local baker, a pot of loose-leaf tea on a rainy morning.",
-      "postBy": "2026-11-06",
-      "links": [
-        { "label": "Trend sound on Instagram (listen before using)", "url": "https://www.instagram.com/reels/audio/25300087489600407/" },
-        { "label": "Later's Reels trend list", "url": "https://later.com/blog/instagram-reels-trends/" }
-      ]
-    },
-    {
-      "name": "\"Taking one for the team\"",
-      "platforms": ["Instagram Reels"],
-      "stage": "rising",
-      "firstSeen": "2026-10-16",
-      "signal": "On Later's weekly Instagram Reels trend list since Oct 16, 2026. Later specifically suggested it for baristas.",
-      "whatItIs": "A lighthearted skit about the person who always takes on the thankless job so everyone else can enjoy the moment.",
-      "coffeeShopIdea": "The barista who bravely taste-tests every new holiday syrup combo \"for the team,\" or the opener who's in before sunrise so everyone else gets their coffee. Keep it kind and playful, and use a clean sound. We are not recommending the usual trend sound because we couldn't confirm the original song is family-friendly.",
-      "postBy": "2026-11-06",
       "links": [
         { "label": "Later's Reels trend list", "url": "https://later.com/blog/instagram-reels-trends/" }
       ]
@@ -130,9 +116,25 @@
   ],
   "tailEnd": [
     {
+      "name": "\"Refuse to be limited by a single niche\"",
+      "platforms": ["Instagram Reels"],
+      "whyItsFading": "On Later's list since Oct 23 with no new momentum signal this week, and about to hit the three-week mark. Still fine for a \"Coffee shop? Never heard of her\" rapid-fire photo dump of the espresso bar, local artist, events, teas, and partners, but it's no longer time-sensitive.",
+      "links": [
+        { "label": "Later's Reels trend list", "url": "https://later.com/blog/instagram-reels-trends/" }
+      ]
+    },
+    {
+      "name": "\"Money can't buy happiness, but...\" and \"Taking one for the team\"",
+      "platforms": ["Instagram Reels"],
+      "whyItsFading": "Both have been on Later's list since Oct 16 (about 2.5 weeks) and have been replaced by newer formats. Evergreen enough to reuse: \"...it can buy a maple latte with house-made syrup,\" or the barista who taste-tests every holiday syrup \"for the team.\"",
+      "links": [
+        { "label": "Later's Reels trend list", "url": "https://later.com/blog/instagram-reels-trends/" }
+      ]
+    },
+    {
       "name": "Halloween formats (Ramalama costume walk, pumpkin head illusion, \"Halloween - cute horror song\")",
       "platforms": ["Instagram Reels", "TikTok"],
-      "whyItsFading": "Halloween was Oct 31. These sounds spiked on Halloween night (Ramalama hit #1 on Tokchart's US chart on Nov 1), but seasonal formats drop off right after the holiday. Save the ideas for next October.",
+      "whyItsFading": "Halloween was Oct 31. These sounds still top Tokchart's Nov 2 chart on leftover momentum (Ramalama +176,800 videos in a day), but seasonal formats drop off right after the holiday. Save the ideas for next October.",
       "links": []
     },
     {
@@ -144,15 +146,9 @@
       ]
     },
     {
-      "name": "Tate McRae \"Housewife\" work reveal",
-      "platforms": ["TikTok"],
-      "whyItsFading": "New US uses have slowed to about 1,100 a day on Tokchart (412K videos total). The wave has passed.",
-      "links": []
-    },
-    {
-      "name": "Fan transition",
-      "platforms": ["Instagram Reels"],
-      "whyItsFading": "On Later's list since Oct 9 and mostly used for fashion. It's aging and doesn't translate well to a coffee counter.",
+      "name": "Fan transition, \"Take that chance,\" and \"Fall outfits\"",
+      "platforms": ["Instagram Reels", "TikTok"],
+      "whyItsFading": "On Later's list since Oct 9, so about three and a half weeks old. They're mostly fashion formats and don't translate well to a coffee counter.",
       "links": []
     },
     {
@@ -174,7 +170,7 @@
       "artist": "Marnie Cusk",
       "platform": "TikTok",
       "trajectory": "rising",
-      "stats": "First used Sept 11, 2026. About 1.54M videos, with 115,605 new ones in the last day (+70% on the day before), per Tokchart on Nov 1. About 59% of its videos are from the US.",
+      "stats": "First used Sept 11, 2026. About 1.54M videos, with 115,605 new ones in the last day (+70% on the day before) and #3 on Tokchart's worldwide chart, per Tokchart (Nov 2, 2026). About 59% of its videos are from the US.",
       "vibe": "Dreamy, cozy instrumental (no lyrics) with no set format, so it fits almost anything.",
       "coffeeShopUse": "Cozy B-roll: latte pours, steam rising off a fresh cup, morning light on the local-artist wall.",
       "businessAccountSafe": "check",
@@ -192,22 +188,33 @@
       "link": "https://www.instagram.com/reels/audio/29285135541104810/"
     },
     {
-      "title": "Training Season",
-      "artist": "Dua Lipa",
-      "platform": "Instagram Reels",
+      "title": "Be OK",
+      "artist": "Ingrid Michaelson",
+      "platform": "TikTok",
       "trajectory": "rising",
-      "stats": "Powers the \"refuse to be limited by a single niche\" trend on Later's Reels list (added Oct 23, 2026).",
-      "vibe": "Upbeat, confident pop.",
-      "coffeeShopUse": "Quick cuts showing every side of the shop: cafe, art gallery, weekly community events, and our local business partners.",
+      "stats": "Soundtrack to the \"Be OK\" trend, #4 on New Engen's TikTok trends list updated Nov 2, 2026. Video counts weren't published, so check the sound page in the app.",
+      "vibe": "Cheerful, upbeat acoustic pop that pairs with carefree dancing and funny on-screen text.",
+      "coffeeShopUse": "Barista grinning and swaying while text confesses a tiny, relatable cafe mishap.",
       "businessAccountSafe": "check",
-      "link": "https://www.instagram.com/reels/audio/2085508281903593/"
+      "link": "https://newengen.com/insights/tiktok-trends/"
+    },
+    {
+      "title": "Halloween ・ cute horror song",
+      "artist": "PeriTune",
+      "platform": "Both",
+      "trajectory": "fading",
+      "stats": "About 6M videos total, with +100,000 new videos in the last day on Tokchart's US chart (Nov 2, 2026). That's a late-stage Halloween sound.",
+      "vibe": "Playful, not-too-spooky instrumental.",
+      "coffeeShopUse": "Skip it now. Seasonal sounds fall off quickly after the holiday.",
+      "businessAccountSafe": "check",
+      "link": "https://tokchart.com/sounds/peritune-halloween-cute-horror-song_6817180237894256641"
     },
     {
       "title": "Ramalama (Bang Bang)",
       "artist": "Róisín Murphy",
       "platform": "Both",
       "trajectory": "fading",
-      "stats": "Spiked to #1 on Tokchart's US chart for Halloween (176,800 new videos in a day, +631%), driven by costume-walk reveals. With Halloween over, expect a fast drop.",
+      "stats": "Hit #1 on Tokchart's US chart for Halloween and is still adding +176,800 videos a day (about 740K total, Nov 2, 2026), driven by costume-walk reveals. With Halloween over, expect a fast drop.",
       "vibe": "Spooky-fun, dramatic beat.",
       "coffeeShopUse": "Skip it now. Save it for next October, when it's likely to come back for Halloween reveals.",
       "businessAccountSafe": "check",
@@ -234,6 +241,21 @@
       "date": "2026-11-28",
       "name": "Small Business Saturday",
       "idea": "Spotlight our local business partners and this month's featured artist. Use \"Toggle on\" to tease the holiday menu or a Small Business Saturday special."
+    },
+    {
+      "date": "2026-12-01",
+      "name": "Giving Tuesday",
+      "idea": "Show a community give-back: a pastry or coffee for a local cause, or a shout-out to a local nonprofit we support. Keep it genuine and low-key."
+    },
+    {
+      "date": "2026-12-04",
+      "name": "National Cookie Day",
+      "idea": "\"Taking one for the team\": a barista bravely taste-tests every cookie from our local baker. Finish with a \"My reaction\" face rating."
+    },
+    {
+      "date": "2026-12-13",
+      "name": "National Hot Cocoa Day",
+      "idea": "A cozy close-up of a house-made syrup cocoa with toppings, using \"Small text zoom\" or a slow \"Recharged\" 1% to 100% on a cold morning."
     }
   ],
   "howToSpotEarly": [
@@ -246,11 +268,11 @@
     "Always listen to the full song and look up the lyrics before using a sound. Some trending clips come from songs that aren't family-friendly."
   ],
   "sources": [
-    { "label": "Tokchart: TikTok trending sounds (US)", "url": "https://tokchart.com/tiktok-trending-sounds/united-states", "checked": "2026-11-01" },
-    { "label": "Tokchart: TikTok trending hashtags", "url": "https://tokchart.com/tiktok-trending-hashtags", "checked": "2026-11-01" },
-    { "label": "Later: Instagram Reels trends (updated weekly)", "url": "https://later.com/blog/instagram-reels-trends/", "checked": "2026-11-01" },
-    { "label": "NewEngen: TikTok trends", "url": "https://newengen.com/insights/tiktok-trends/", "checked": "2026-11-01" },
-    { "label": "TikTok Creative Center", "url": "https://ads.tiktok.com/business/creativecenter/", "checked": "2026-11-01" },
-    { "label": "TikTok Commercial Music Library", "url": "https://ads.tiktok.com/business/en/blog/commercial-music-library", "checked": "2026-11-01" }
+    { "label": "Tokchart: TikTok trending sounds (US)", "url": "https://tokchart.com/tiktok-trending-sounds/united-states", "checked": "2026-11-02" },
+    { "label": "Tokchart: TikTok trending hashtags", "url": "https://tokchart.com/tiktok-trending-hashtags", "checked": "2026-11-02" },
+    { "label": "Later: Instagram Reels trends (updated weekly)", "url": "https://later.com/blog/instagram-reels-trends/", "checked": "2026-11-02" },
+    { "label": "NewEngen: TikTok trends", "url": "https://newengen.com/insights/tiktok-trends/", "checked": "2026-11-02" },
+    { "label": "TikTok Creative Center", "url": "https://ads.tiktok.com/business/creativecenter/", "checked": "2026-11-02" },
+    { "label": "TikTok Commercial Music Library", "url": "https://ads.tiktok.com/business/en/blog/commercial-music-library", "checked": "2026-11-02" }
   ]
 }
