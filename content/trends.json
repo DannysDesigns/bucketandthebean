@@ -1,60 +1,131 @@
 {
-  "lastUpdated": "2026-11-02",
-  "nextRefresh": "2026-11-09",
-  "headline": "Halloween is over, so shift to cozy November: #musteatinmycity is still the fastest-growing hashtag on TikTok, so film a \"must-sip in North Kingstown,\" and pair a \"Be OK\" relatable-confession Reel with the holiday menu teaser.",
+  "lastUpdated": "2026-11-16",
+  "nextRefresh": "2026-11-23",
+  "headline": "Thanksgiving week is a cozy-content week: soft-launch the holiday menu with the \"My Moon My Man\" sound (still climbing fast), film a turkey-shaped pastry board before Thursday, and use Mariah's \"It's time\" to flip the shop into holiday mode.",
   "upcoming": [
     {
-      "name": "#musteatinmycity (\"Lunch in my city\")",
+      "name": "\"My Moon My Man\" soft launch",
       "platforms": ["TikTok", "Instagram Reels"],
-      "stage": "early",
+      "stage": "rising",
+      "firstSeen": "2026-10-27",
+      "signal": "Tokchart (Nov 16, 2026): first used Oct 27, about 375K videos, +100,400 new videos in a day (+12% on the day before), #4 on the worldwide sound chart. About 32% of its videos are from the US. It is also #1 on New Engen's TikTok trends list (updated Nov 13, 2026).",
+      "whatItIs": "A dreamy, romantic cover used for \"soft launches\": subtle teasers that show a corner of something special without the full reveal, like intertwined hands or two coffee orders on a counter.",
+      "coffeeShopIdea": "Soft-launch the holiday menu: a sleeve of a new cup, a close-up of a house-made syrup bottle, or two drinks side by side on the counter, then reveal the full menu on the next post. Also works as a \"perfect pairing\" clip of a latte and a pastry from our local baker.",
+      "postBy": "2026-11-23",
+      "links": [
+        { "label": "Sound on TikTok", "url": "https://www.tiktok.com/music/my-moon-my-man-finneas-cover-7701470458784320288" },
+        { "label": "Chart stats on Tokchart", "url": "https://tokchart.com/sounds/niki-my-moon-my-man-finneas-cover_7701470458784320288" },
+        { "label": "How the trend works (New Engen)", "url": "https://newengen.com/insights/tiktok-trends/" }
+      ]
+    },
+    {
+      "name": "Mariah's \"It's time\" holiday kickoff",
+      "platforms": ["TikTok", "Instagram Reels"],
+      "stage": "rising",
       "firstSeen": "2026-11-01",
-      "signal": "Still the #1 fastest-growing TikTok hashtag worldwide on Tokchart (Nov 2, 2026), second day in a row. One example post has passed 200K likes. Post on TikTok first, then cross-post to Reels.",
-      "whatItIs": "Hyper-local food and drink recommendations: show the spot, film the first bite or first sip with an honest reaction, and tag the location so locals can find it.",
-      "coffeeShopIdea": "\"Must-sip in North Kingstown\": film the first sip of an Autocrat coffee milk or a latte with a pastry from our local baker, and tag 679 Boston Neck Road. Invite regulars and our local business partners to film their own first sip, then repost the best ones.",
-      "postBy": "2026-11-12",
+      "signal": "#3 on New Engen's TikTok trends list (updated Nov 13, 2026), which notes coffee shops bringing holiday drinks back to the menu as a core use of the sound.",
+      "whatItIs": "A quick before-and-after: something still plain or autumn-y, then a cut on \"It's time\" to the festive version.",
+      "coffeeShopIdea": "The shop flips to holiday mode: bare counter, then lights, garland, and the holiday syrups lined up. Or the first holiday drink ordered of the season. Add text like \"It's November... you know what that means.\" The audio is Mariah's voice, so check it's available to business accounts or use an approved holiday track.",
+      "postBy": "2026-11-22",
       "links": [
-        { "label": "#musteatinmycity on TikTok", "url": "https://www.tiktok.com/tag/musteatinmycity" },
-        { "label": "Example post (200K+ likes)", "url": "https://www.tiktok.com/@tabbymoschetti/video/7662477864578616590" },
-        { "label": "Explainer (Spoon University)", "url": "https://spoonuniversity.com/news/lunch-in-my-city-trend/" }
+        { "label": "How the trend works (New Engen)", "url": "https://newengen.com/insights/tiktok-trends/" }
       ]
     },
     {
-      "name": "\"Toggle on\"",
+      "name": "Turkey charcuterie boards (pastry version)",
+      "platforms": ["TikTok", "Instagram Reels"],
+      "stage": "rising",
+      "firstSeen": "2026-11-10",
+      "signal": "#2 on New Engen's TikTok trends list (updated Nov 13, 2026). Seasonal, so it peaks right up to Thanksgiving on Nov 26 and then drops fast.",
+      "whatItIs": "A satisfying overhead build of a board fanned into turkey tail feathers, with the finished turkey saved for the last seconds. Viewers save these as plans for their own table.",
+      "coffeeShopIdea": "Build a turkey out of mini pastries, cookies, and fruit from our local baker, with a coffee-milk or latte beside it. Film overhead, sped up. Offer it as a pre-order or a Friendsgiving treat tray.",
+      "postBy": "2026-11-24",
+      "links": [
+        { "label": "How the trend works (New Engen)", "url": "https://newengen.com/insights/tiktok-trends/" }
+      ]
+    },
+    {
+      "name": "Chipmunks dance (staff group of three)",
+      "platforms": ["TikTok"],
+      "stage": "early",
+      "firstSeen": "2026-11-13",
+      "signal": "#4 on New Engen's TikTok trends list (updated Nov 13, 2026) and described as spreading fast. The routine is short enough to learn in an afternoon. Video counts weren't published, so check the sound in the app.",
+      "whatItIs": "Groups of three hit a goofy routine of jumps, kicks, and spins to a sped-up, chipmunk-voiced remix. The more everyone commits, the better it lands.",
+      "coffeeShopIdea": "Three baristas in aprons do the routine in front of the espresso bar before opening. Quick, funny, and shows off the team. Listen to the full sound and confirm it's business-safe before posting.",
+      "postBy": "2026-11-27",
+      "links": [
+        { "label": "How the trend works (New Engen)", "url": "https://newengen.com/insights/tiktok-trends/" }
+      ]
+    },
+    {
+      "name": "\"5 stages of being...\"",
       "platforms": ["Instagram Reels"],
       "stage": "early",
-      "firstSeen": "2026-10-30",
-      "signal": "One of the newest formats on Later's weekly Instagram Reels trend list (added Oct 30, 2026).",
-      "whatItIs": "\"News alert: toggle on.\" A quick, easy way to tease an announcement, a bit of news, or a new series.",
-      "coffeeShopIdea": "\"Holiday menu: toggle on.\" Tease the holiday drinks with close-ups of our house-made syrups, then reveal the full menu board. Save it for the day the holiday menu launches.",
-      "postBy": "2026-11-12",
+      "firstSeen": "2026-11-13",
+      "signal": "Newest entry (Nov 13, 2026) on Later's weekly Instagram Reels trend list.",
+      "whatItIs": "Five clips and five moods, from confident and hyped to fully overwhelmed, titled \"5 stages of being...\" with whatever fits your world.",
+      "coffeeShopIdea": "\"5 stages of being a barista on Wednesday before Thanksgiving\": calm, first rush, pie-order panic, oat milk running low, then the final cup and a happy sigh. Keep it warm and funny.",
+      "postBy": "2026-11-25",
       "links": [
-        { "label": "Trend sound on Instagram (listen before using)", "url": "https://www.instagram.com/reels/audio/29285135541104810/" },
+        { "label": "Trend sound on Instagram (listen before using)", "url": "https://www.instagram.com/reels/audio/28492404660419811/" },
         { "label": "Later's Reels trend list", "url": "https://later.com/blog/instagram-reels-trends/" }
       ]
     },
     {
-      "name": "\"Recharged\": 1% to 100%",
+      "name": "Appointment timestamps (\"one drink\" timestamps)",
       "platforms": ["Instagram Reels"],
       "stage": "early",
-      "firstSeen": "2026-10-30",
-      "signal": "Added to Later's weekly Instagram Reels trend list on Oct 30, 2026.",
-      "whatItIs": "A before-and-after energy boost: show someone at \"1% battery,\" then cut to them fully recharged at 100%.",
-      "coffeeShopIdea": "A barista (or a willing regular) at 1% battery at the 6:30 a.m. opening, then 100% after the first sip of a house latte. Add a phone-battery graphic for the cut.",
-      "postBy": "2026-11-12",
+      "firstSeen": "2026-11-13",
+      "signal": "Added to Later's weekly Instagram Reels trend list on Nov 13, 2026, as a spin on the day-in-the-life timestamp format.",
+      "whatItIs": "Timestamp the journey of a single visit, from walking in to walking out, instead of a whole day.",
+      "coffeeShopIdea": "One customer's visit to Bucket & the Bean: 9:02 walks in, 9:04 picks a syrup, 9:06 first sip, 9:20 chats with the featured artist, 9:35 walks out with beans to go. A calm behind-the-scenes look at the space.",
+      "postBy": "2026-11-27",
       "links": [
-        { "label": "Trend sound on Instagram (listen before using)", "url": "https://www.instagram.com/reels/audio/39477063311941741/" },
+        { "label": "Trend sound on Instagram (listen before using)", "url": "https://www.instagram.com/reels/audio/27734209222913191/" },
         { "label": "Later's Reels trend list", "url": "https://later.com/blog/instagram-reels-trends/" }
       ]
     },
     {
-      "name": "\"Small text zoom\"",
-      "platforms": ["Instagram Reels"],
+      "name": "\"Go, Go, Go\" (format only)",
+      "platforms": ["TikTok"],
       "stage": "early",
-      "firstSeen": "2026-10-30",
-      "signal": "Added to Later's weekly Instagram Reels trend list on Oct 30, 2026.",
-      "whatItIs": "Tiny on-screen text that slowly zooms in to reveal a fun fact or a big feeling, so viewers lean in to read it.",
-      "coffeeShopIdea": "Tiny text over a row of syrup bottles that zooms in to read \"every syrup here is made in-house.\" Do a second one on the art wall: \"this month's featured artist is a local.\" Pair it with a clean sound from TikTok's Commercial Music Library or Meta's sound collection. We are not linking the sound most used with this trend because it comes from a song with explicit lyrics.",
-      "postBy": "2026-11-12",
+      "firstSeen": "2026-11-13",
+      "signal": "#7 on New Engen's TikTok trends list (updated Nov 13, 2026). New Engen specifically cites \"coffee pickup\" as an example situation.",
+      "whatItIs": "Lip-sync a frantic \"go, go, go\" clip over on-screen text describing a moment that calls for instant action.",
+      "coffeeShopIdea": "Text like \"when they call your name and it's the new holiday latte\" or \"POV: the pastry case just got refilled.\" Use a clean sound from TikTok's Commercial Music Library or Meta's sound collection rather than the original clip.",
+      "postBy": "2026-11-25",
+      "links": [
+        { "label": "How the trend works (New Engen)", "url": "https://newengen.com/insights/tiktok-trends/" }
+      ]
+    },
+    {
+      "name": "\"I just wanna...\" lifestyle wish list (format only)",
+      "platforms": ["Instagram Reels", "TikTok"],
+      "stage": "rising",
+      "firstSeen": "2026-10-20",
+      "signal": "On Later's list as \"I just wanna\" (Nov 6, 2026) and #12 on New Engen's TikTok list (Nov 13, 2026), so it is still circulating a few weeks after it started.",
+      "whatItIs": "\"I just wanna...\" over lifestyle B-roll, revealing how the creator would spend a windfall, or the jobs and passions behind their day.",
+      "coffeeShopIdea": "\"I just wanna roast the beans, pour the latte art, and hang a new artist's work\" over clips of exactly that. We aren't confirming the original song's lyrics are family-friendly, so use a clean sound from TikTok's Commercial Music Library or Meta's sound collection.",
+      "postBy": "2026-11-22",
+      "links": [
+        { "label": "Later's Reels trend list", "url": "https://later.com/blog/instagram-reels-trends/" },
+        { "label": "How the trend works (New Engen)", "url": "https://newengen.com/insights/tiktok-trends/" }
+      ]
+    }
+  ],
+  "tailEnd": [
+    {
+      "name": "\"Toggle on,\" \"Recharged\" 1% to 100%, and \"Small text zoom\"",
+      "platforms": ["Instagram Reels"],
+      "whyItsFading": "All three were added to Later's list on Oct 30 and have since been replaced by Nov 6 and Nov 13 entries. They're evergreen enough to reuse for a menu tease or a morning-coffee glow-up, but they're no longer fresh. (The sound most paired with \"Small text zoom\" comes from a song with explicit lyrics, so skip it.)",
+      "links": [
+        { "label": "Later's Reels trend list", "url": "https://later.com/blog/instagram-reels-trends/" }
+      ]
+    },
+    {
+      "name": "Vlog timestamps and \"My reaction\"",
+      "platforms": ["Instagram Reels"],
+      "whyItsFading": "On Later's list since Oct 23, about three and a half weeks old. The timestamp idea lives on in the newer \"Appointment timestamps\" format.",
       "links": [
         { "label": "Later's Reels trend list", "url": "https://later.com/blog/instagram-reels-trends/" }
       ]
@@ -62,128 +133,101 @@
     {
       "name": "\"Be OK\" (cheerful dance, relatable confession)",
       "platforms": ["TikTok"],
-      "stage": "early",
-      "firstSeen": "2026-11-02",
-      "signal": "New this week on New Engen's TikTok trends list (updated Nov 2, 2026), #4 of 12 formats to watch.",
-      "whatItIs": "Dance happily to Ingrid Michaelson's upbeat song while on-screen text reveals something small that is definitely not okay, like sending \"please see attached\" with nothing attached. The contrast is the joke.",
-      "coffeeShopIdea": "A barista grins and sways behind the counter while the text reads \"me realizing I put the oat milk in the wrong fridge\" or \"when the pastry case is empty at 9 a.m.\" Do a customer version too: \"me after one sip of decaf.\" Keep it light and kind.",
-      "postBy": "2026-11-12",
+      "whyItsFading": "It was a new pick on New Engen's Nov 2 list but didn't make the Nov 13 list, so its moment has passed. The \"relatable cafe mishap\" idea still works with other sounds.",
       "links": [
-        { "label": "How the trend works (New Engen)", "url": "https://newengen.com/insights/tiktok-trends/" }
+        { "label": "New Engen TikTok trends", "url": "https://newengen.com/insights/tiktok-trends/" }
       ]
     },
     {
-      "name": "\"Housewife\" outfit and work reveal (format only)",
-      "platforms": ["TikTok"],
-      "stage": "rising",
-      "firstSeen": "2026-10-20",
-      "signal": "Still growing: Tokchart's US chart (Nov 2, 2026) shows the sound at about 439K videos with +27,400 new videos in a day, and New Engen lists it this week. Last week we called it faded, but the daily numbers say otherwise.",
-      "whatItIs": "A confident outfit reveal that cuts to clips of you doing the job that pays for it.",
-      "coffeeShopIdea": "Owner or barista in the Bucket & the Bean apron, then cut to pulling a shot, steaming milk, and pouring latte art. Use a clean sound from TikTok's Commercial Music Library or Meta's sound collection, because we haven't confirmed the original song's lyrics are family-friendly.",
-      "postBy": "2026-11-09",
+      "name": "#musteatinmycity (\"Lunch in my city\")",
+      "platforms": ["TikTok", "Instagram Reels"],
+      "whyItsFading": "It topped the hashtag chart around Nov 1-2, but it isn't on Tokchart's top 10 now (Nov 16, 2026). The format of a hyper-local \"first sip\" recommendation is evergreen, so keep using it without the hashtag push.",
       "links": [
-        { "label": "Trend stats on Tokchart (US)", "url": "https://tokchart.com/tiktok-trending-sounds/united-states" },
-        { "label": "How the trend works (New Engen)", "url": "https://newengen.com/insights/tiktok-trends/" }
+        { "label": "#musteatinmycity on TikTok", "url": "https://www.tiktok.com/tag/musteatinmycity" }
       ]
     },
     {
-      "name": "\"Vlog timestamps\"",
+      "name": "\"Refuse to be limited by a single niche,\" \"Money can't buy happiness, but...,\" and \"Taking one for the team\"",
       "platforms": ["Instagram Reels"],
-      "stage": "rising",
-      "firstSeen": "2026-10-23",
-      "signal": "On Later's weekly Instagram Reels trend list since Oct 23, 2026 and still being picked up.",
-      "whatItIs": "A day-in-the-life vlog with a timestamp on every clip, so viewers can follow the day hour by hour.",
-      "coffeeShopIdea": "A day at Bucket & the Bean from 6:30 a.m. open to 3:30 p.m. close: unlocking the door, the first espresso shot, the pastry drop-off from our baker, the morning rush, the art wall, and the last cup of the day. Use a clean, upbeat sound. We are not linking the sound usually paired with this trend because the original song has explicit lyrics.",
-      "postBy": "2026-11-08",
+      "whyItsFading": "On Later's list since Oct 16 to Oct 23, so three to four weeks old. Evergreen if you want them: \"...it can buy a maple latte,\" or the barista who taste-tests every holiday syrup \"for the team.\"",
       "links": [
         { "label": "Later's Reels trend list", "url": "https://later.com/blog/instagram-reels-trends/" }
       ]
     },
     {
-      "name": "\"My reaction\"",
-      "platforms": ["Instagram Reels"],
-      "stage": "rising",
-      "firstSeen": "2026-10-23",
-      "signal": "On Later's weekly Instagram Reels trend list since Oct 23, 2026.",
-      "whatItIs": "No talking, just honest facial expressions reacting to something on screen.",
-      "coffeeShopIdea": "Staff try odd coffee combos (yogurt coffee, an espresso tonic, a coffee-milk float) and rate them using only their faces. End on the drink they'd actually order.",
-      "postBy": "2026-11-08",
-      "links": [
-        { "label": "Trend sound on Instagram (listen before using)", "url": "https://www.instagram.com/reels/audio/28278178948540945/" },
-        { "label": "Later's Reels trend list", "url": "https://later.com/blog/instagram-reels-trends/" }
-      ]
-    }
-  ],
-  "tailEnd": [
-    {
-      "name": "\"Refuse to be limited by a single niche\"",
-      "platforms": ["Instagram Reels"],
-      "whyItsFading": "On Later's list since Oct 23 with no new momentum signal this week, and about to hit the three-week mark. Still fine for a \"Coffee shop? Never heard of her\" rapid-fire photo dump of the espresso bar, local artist, events, teas, and partners, but it's no longer time-sensitive.",
-      "links": [
-        { "label": "Later's Reels trend list", "url": "https://later.com/blog/instagram-reels-trends/" }
-      ]
-    },
-    {
-      "name": "\"Money can't buy happiness, but...\" and \"Taking one for the team\"",
-      "platforms": ["Instagram Reels"],
-      "whyItsFading": "Both have been on Later's list since Oct 16 (about 2.5 weeks) and have been replaced by newer formats. Evergreen enough to reuse: \"...it can buy a maple latte with house-made syrup,\" or the barista who taste-tests every holiday syrup \"for the team.\"",
-      "links": [
-        { "label": "Later's Reels trend list", "url": "https://later.com/blog/instagram-reels-trends/" }
-      ]
-    },
-    {
-      "name": "Halloween formats (Ramalama costume walk, pumpkin head illusion, \"Halloween - cute horror song\")",
+      "name": "Fan transition, \"Take that chance,\" and outfit formats",
       "platforms": ["Instagram Reels", "TikTok"],
-      "whyItsFading": "Halloween was Oct 31. These sounds still top Tokchart's Nov 2 chart on leftover momentum (Ramalama +176,800 videos in a day), but seasonal formats drop off right after the holiday. Save the ideas for next October.",
+      "whyItsFading": "On Later's list since Oct 9, over five weeks old. They're mostly fashion formats and don't translate well to a coffee counter.",
+      "links": []
+    },
+    {
+      "name": "Halloween and October formats (Ramalama, \"Halloween - cute horror song,\" October sounds)",
+      "platforms": ["Instagram Reels", "TikTok"],
+      "whyItsFading": "Halloween was Oct 31 and these sounds are gone from the top of the charts. Save the ideas for next October.",
       "links": []
     },
     {
       "name": "Yogurt coffee",
       "platforms": ["TikTok"],
-      "whyItsFading": "Peaked around March 2026. It still works as a funny taste test inside the \"My reaction\" format, but not as its own trend.",
+      "whyItsFading": "Peaked around March 2026. It still works as a funny taste test, but not as its own trend.",
       "links": [
         { "label": "Sprudge on the yogurt coffee trend", "url": "https://sprudge.com/yogurt-coffee-is-the-new-hot-tiktok-coffee-drink-837508.html" }
       ]
-    },
-    {
-      "name": "Fan transition, \"Take that chance,\" and \"Fall outfits\"",
-      "platforms": ["Instagram Reels", "TikTok"],
-      "whyItsFading": "On Later's list since Oct 9, so about three and a half weeks old. They're mostly fashion formats and don't translate well to a coffee counter.",
-      "links": []
-    },
-    {
-      "name": "October sounds (\"Hello October,\" \"We Fell in Love in October\")",
-      "platforms": ["Instagram Reels", "TikTok"],
-      "whyItsFading": "The month is over. Switch to November and holiday sounds.",
-      "links": []
-    },
-    {
-      "name": "\"Upside down\" and \"Daily GRWM loading\"",
-      "platforms": ["Instagram Reels"],
-      "whyItsFading": "On Later's list since Oct 2. A month old now, so engagement is tapering off.",
-      "links": []
     }
   ],
   "music": [
     {
-      "title": "Paper Moon Static",
-      "artist": "Marnie Cusk",
+      "title": "my moon my man (Finneas cover)",
+      "artist": "Finneas (cover of Feist), posted by niki",
       "platform": "TikTok",
       "trajectory": "rising",
-      "stats": "First used Sept 11, 2026. About 1.54M videos, with 115,605 new ones in the last day (+70% on the day before) and #3 on Tokchart's worldwide chart, per Tokchart (Nov 2, 2026). About 59% of its videos are from the US.",
-      "vibe": "Dreamy, cozy instrumental (no lyrics) with no set format, so it fits almost anything.",
-      "coffeeShopUse": "Cozy B-roll: latte pours, steam rising off a fresh cup, morning light on the local-artist wall.",
+      "stats": "First used Oct 27, 2026. About 375K videos, +100,400 new videos in the last day (+12%), #4 on Tokchart's worldwide chart (Nov 16, 2026). About 32% of videos are from the US.",
+      "vibe": "Soft, dreamy, romantic. Gentle enough to make simple footage feel cinematic.",
+      "coffeeShopUse": "Holiday menu soft launch, two drinks side by side, or a latte-and-pastry pairing. Check the lyrics and in-app availability before posting from a business account.",
       "businessAccountSafe": "check",
-      "link": "https://www.tiktok.com/music/paper-moon-static-7684150368565250075"
+      "link": "https://www.tiktok.com/music/my-moon-my-man-finneas-cover-7701470458784320288"
+    },
+    {
+      "title": "Chopin Nocturne No. 2 Piano Mono",
+      "artist": "moshimo sound design",
+      "platform": "TikTok",
+      "trajectory": "rising",
+      "stats": "About 7.4M videos, with +100,000 new in the last day and #5 on Tokchart's US chart (Nov 16, 2026). First used in 2020, so it's a long-running sound enjoying a new surge. About 16% of videos are from the US.",
+      "vibe": "Calm, elegant solo piano with no lyrics. It fits almost anything.",
+      "coffeeShopUse": "Slow, cozy B-roll: steam off a fresh cup, latte pours, snow or rain outside the window, the art wall in warm light.",
+      "businessAccountSafe": "check",
+      "link": "https://www.tiktok.com/music/chopin-nocturne-no-2-piano-mono-6817665487665629186"
+    },
+    {
+      "title": "It's Time (Mariah's holiday kickoff audio)",
+      "artist": "Mariah Carey",
+      "platform": "Both",
+      "trajectory": "rising",
+      "stats": "#3 on New Engen's TikTok trends list (updated Nov 13, 2026). Video counts weren't published, so check the sound page in the app.",
+      "vibe": "Playful, festive reveal.",
+      "coffeeShopUse": "Flip the shop to holiday mode, or the first holiday drink of the season. Check availability for business accounts or recreate the moment with an approved holiday track.",
+      "businessAccountSafe": "check",
+      "link": "https://newengen.com/insights/tiktok-trends/"
+    },
+    {
+      "title": "The Blue Danube Waltz",
+      "artist": "Royal Symphony Orchestra",
+      "platform": "Instagram Reels",
+      "trajectory": "rising",
+      "stats": "The sound behind the \"Every girl for absolutely no reason\" format on Later's Reels list (added Nov 6, 2026).",
+      "vibe": "Light, classical waltz with no lyrics. Playful and elegant.",
+      "coffeeShopUse": "A fun \"for absolutely no reason\" moment: a barista suddenly in a festive apron, a pastry-case reveal, or a spontaneous latte-art flourish.",
+      "businessAccountSafe": "check",
+      "link": "https://www.instagram.com/reels/audio/2488033034771649/"
     },
     {
       "title": "Mix (the \"Toggle on\" sound)",
       "artist": "sviola_handmade",
       "platform": "Instagram Reels",
-      "trajectory": "rising",
-      "stats": "The sound behind the \"Toggle on\" trend on Later's Reels list (added Oct 30, 2026).",
+      "trajectory": "fading",
+      "stats": "Tied to the \"Toggle on\" trend added to Later's Reels list on Oct 30, 2026. It hasn't appeared in newer updates.",
       "vibe": "Build-up and reveal. It's a creator-made mix, so listen all the way through before posting.",
-      "coffeeShopUse": "Holiday menu reveal, a new syrup flavor, or announcing this month's featured artist.",
+      "coffeeShopUse": "Still usable for a holiday menu reveal or announcing this month's featured artist, but it's aging.",
       "businessAccountSafe": "check",
       "link": "https://www.instagram.com/reels/audio/29285135541104810/"
     },
@@ -191,56 +235,34 @@
       "title": "Be OK",
       "artist": "Ingrid Michaelson",
       "platform": "TikTok",
-      "trajectory": "rising",
-      "stats": "Soundtrack to the \"Be OK\" trend, #4 on New Engen's TikTok trends list updated Nov 2, 2026. Video counts weren't published, so check the sound page in the app.",
-      "vibe": "Cheerful, upbeat acoustic pop that pairs with carefree dancing and funny on-screen text.",
-      "coffeeShopUse": "Barista grinning and swaying while text confesses a tiny, relatable cafe mishap.",
+      "trajectory": "fading",
+      "stats": "Was #4 on New Engen's Nov 2, 2026 list but isn't on the Nov 13 list.",
+      "vibe": "Cheerful, upbeat acoustic pop.",
+      "coffeeShopUse": "Fine for a barista swaying behind the counter with funny on-screen text, but the trend has moved on.",
       "businessAccountSafe": "check",
       "link": "https://newengen.com/insights/tiktok-trends/"
-    },
-    {
-      "title": "Halloween ・ cute horror song",
-      "artist": "PeriTune",
-      "platform": "Both",
-      "trajectory": "fading",
-      "stats": "About 6M videos total, with +100,000 new videos in the last day on Tokchart's US chart (Nov 2, 2026). That's a late-stage Halloween sound.",
-      "vibe": "Playful, not-too-spooky instrumental.",
-      "coffeeShopUse": "Skip it now. Seasonal sounds fall off quickly after the holiday.",
-      "businessAccountSafe": "check",
-      "link": "https://tokchart.com/sounds/peritune-halloween-cute-horror-song_6817180237894256641"
-    },
-    {
-      "title": "Ramalama (Bang Bang)",
-      "artist": "Róisín Murphy",
-      "platform": "Both",
-      "trajectory": "fading",
-      "stats": "Hit #1 on Tokchart's US chart for Halloween and is still adding +176,800 videos a day (about 740K total, Nov 2, 2026), driven by costume-walk reveals. With Halloween over, expect a fast drop.",
-      "vibe": "Spooky-fun, dramatic beat.",
-      "coffeeShopUse": "Skip it now. Save it for next October, when it's likely to come back for Halloween reveals.",
-      "businessAccountSafe": "check",
-      "link": "https://www.tiktok.com/music/ramalama-bang-bang-6919100601457215489"
     }
   ],
   "calendar": [
     {
-      "date": "2026-11-08",
-      "name": "National Cappuccino Day",
-      "idea": "Film a slow-motion milk pour and a foam close-up, using the \"Small text zoom\" format: tiny text that grows into \"Happy National Cappuccino Day.\" A one-day cappuccino special would give people a reason to stop in."
-    },
-    {
       "date": "2026-11-23",
       "name": "National Espresso Day",
-      "idea": "Go behind the bar: show how we dial in the espresso each morning, or do a \"My reaction\" tasting of shots with the team."
+      "idea": "Go behind the bar: show how we dial in the espresso each morning, or use \"Appointment timestamps\" to follow one shot from grind to first sip."
     },
     {
       "date": "2026-11-26",
       "name": "Thanksgiving",
-      "idea": "Share what the team is thankful for: our regulars, our baker, our local partners. \"Money can't buy happiness, but...\" fits nicely. Post any holiday-hours changes a few days ahead."
+      "idea": "Share what the team is thankful for: our regulars, our baker, our local partners. Post any holiday-hours changes a few days ahead, and film the turkey pastry board before Thursday."
+    },
+    {
+      "date": "2026-11-27",
+      "name": "Black Friday",
+      "idea": "Skip the sale hype and show gift ideas instead: a bag of locally roasted beans, loose-leaf teas, and a bottle of house-made syrup as a gift set."
     },
     {
       "date": "2026-11-28",
       "name": "Small Business Saturday",
-      "idea": "Spotlight our local business partners and this month's featured artist. Use \"Toggle on\" to tease the holiday menu or a Small Business Saturday special."
+      "idea": "Spotlight our local business partners and this month's featured artist. Soft-launch a Small Business Saturday special with the \"My Moon My Man\" sound."
     },
     {
       "date": "2026-12-01",
@@ -250,12 +272,17 @@
     {
       "date": "2026-12-04",
       "name": "National Cookie Day",
-      "idea": "\"Taking one for the team\": a barista bravely taste-tests every cookie from our local baker. Finish with a \"My reaction\" face rating."
+      "idea": "A barista taste-tests every cookie from our local baker \"for the team,\" then finishes with a happy face rating."
     },
     {
       "date": "2026-12-13",
       "name": "National Hot Cocoa Day",
-      "idea": "A cozy close-up of a house-made syrup cocoa with toppings, using \"Small text zoom\" or a slow \"Recharged\" 1% to 100% on a cold morning."
+      "idea": "A cozy close-up of a house-made syrup cocoa with toppings, set to a calm piano sound like the Chopin Nocturne."
+    },
+    {
+      "date": "2026-12-21",
+      "name": "First day of winter",
+      "idea": "A cold-morning-to-warm-cup moment: frosty window, steaming mug. A good \"1% to 100%\" energy recharge clip."
     }
   ],
   "howToSpotEarly": [
@@ -268,11 +295,11 @@
     "Always listen to the full song and look up the lyrics before using a sound. Some trending clips come from songs that aren't family-friendly."
   ],
   "sources": [
-    { "label": "Tokchart: TikTok trending sounds (US)", "url": "https://tokchart.com/tiktok-trending-sounds/united-states", "checked": "2026-11-02" },
-    { "label": "Tokchart: TikTok trending hashtags", "url": "https://tokchart.com/tiktok-trending-hashtags", "checked": "2026-11-02" },
-    { "label": "Later: Instagram Reels trends (updated weekly)", "url": "https://later.com/blog/instagram-reels-trends/", "checked": "2026-11-02" },
-    { "label": "NewEngen: TikTok trends", "url": "https://newengen.com/insights/tiktok-trends/", "checked": "2026-11-02" },
-    { "label": "TikTok Creative Center", "url": "https://ads.tiktok.com/business/creativecenter/", "checked": "2026-11-02" },
-    { "label": "TikTok Commercial Music Library", "url": "https://ads.tiktok.com/business/en/blog/commercial-music-library", "checked": "2026-11-02" }
+    { "label": "Tokchart: TikTok trending sounds (US)", "url": "https://tokchart.com/tiktok-trending-sounds/united-states", "checked": "2026-11-16" },
+    { "label": "Tokchart: TikTok trending hashtags", "url": "https://tokchart.com/tiktok-trending-hashtags", "checked": "2026-11-16" },
+    { "label": "Later: Instagram Reels trends (updated weekly)", "url": "https://later.com/blog/instagram-reels-trends/", "checked": "2026-11-16" },
+    { "label": "NewEngen: TikTok trends", "url": "https://newengen.com/insights/tiktok-trends/", "checked": "2026-11-16" },
+    { "label": "TikTok Creative Center", "url": "https://ads.tiktok.com/business/creativecenter/", "checked": "2026-11-16" },
+    { "label": "TikTok Commercial Music Library", "url": "https://ads.tiktok.com/business/en/blog/commercial-music-library", "checked": "2026-11-16" }
   ]
 }
